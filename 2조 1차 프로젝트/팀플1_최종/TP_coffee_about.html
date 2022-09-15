@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT</title>
+    <!-- css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="TP_coffee_about.css"></link>
+    <link rel="stylesheet" href="TP_coffee_main.css"></link>
+    <!--글꼴-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Jua&family=Noto+Sans+KR:wght@100;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Inconsolata:wght@300&family=Jua&family=Noto+Sans+KR:wght@100;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- main과 동일-->
+    <header class='header'>
+        
+        <div class="logoArea">
+            <a href="TP_coffee_main.html">CIP</a>    
+        </div>
+
+        <div class='menu'>
+            <li><a href="TP_coffee_about.html">ABOUT COFFEE</a></li>
+            <li><a href="TP_coffee_cafe.html">CAFE</a></li>
+            <li><a href="TP_coffee_best.html">BEST</a></li>
+        </div>
+
+
+        <div class='sign' >
+            <a href="TP_coffee_login.html" id='sign' onclick="changeSignHtml()">
+                <img src="상단\sign.png" height=30px>
+            </a>
+        </div>
+
+    </header>
+    
+    <!-- middles section-->
+    <section class="middle_wrap">
+
+        <div class="middle3_wrap" style="background-size: cover;">
+            <div class="middle3_tabs">
+                <input type="radio" name = "tabmenu" id="tab01" onclick="tabVisible()" checked>
+                <label for="tab01" >COFFEE</label>
+                <input type="radio" name = "tabmenu" id="tab02" onclick="tabVisible()">
+                <label for="tab02" >BEANS</label>
+                <input type="radio" name = "tabmenu" id="tab03" onclick="tabVisible()">
+                <label for="tab03">ICE</label>
+                <input type="radio" name = "tabmenu" id="tab04" onclick="tabVisible()">
+                <label for="tab04">ESPRESSO EXTRACTION</label>
+            </div> 
+            <div class="tabcon_wrap">    
+                <div class="tabcon con0" id="tab00">
+                    <div class="text_wrap">
+                        <!-- <a class="nav-item disabled" id = "tab00">{CLICK}</a> -->
+                        <div class="textbox">
+                            <h1>우리에게 커피란?</h1>
+                            <h3><br><br>&nbsp커피를 즐기는 다향한 방법은 이미 하나의 문화로 남녀노소 가릴것 없이 모든 한국인과 함께하고 있습니다.</h3>
+                            <h6>&nbsp간단하게 마실 수 있는 믹스 커피부터, 직장인들의 필수품 아이스 아메리카노,<br><br>
+                                수제 크림이 올라가 트렌디한 인스타 감성의 아인슈페너와 비엔나 커피, 라떼, 모카 등 <br><br>
+                                다양한 취향에 따라 어떤 카페를 갈지도 정해지며, "어떤 카페의 어떤 맛이, 분위기가, 감성이 어떻게 좋았다." <br><br>
+                                카페의 이러한 독특한 개성 하나가 하나의 장르로 구축되어 지금의 카페시장이 발전해왔습니다.<br><br>
+                                좌측 탭의 원두(BEANS)부터 추출(ESPRESSO EXTRACTION)까지<br><br>
+                                ‘내가’ 좋아하는 커피가 무엇인지 지금 함께 알아볼까요?</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabcon con1" id="tab01">
+                    <!-- carousel -->
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+
+                        </ol>
+                        <div class="carousel-inner">
+                            <!-- 에티오피아 슬라이드 -->
+                            <div class="carousel-item active">
+                                <img class="d-block" id = "ethiopia" src="about/ethiopia/01.jpg" alt="First slide" height="1000px" style="background-color: black;">
+                                <div class="carousel-caption modal-dialog-centered d-md-block" >
+                                    <div class="textbox">
+                                        <h1 class="">Ethiopia</h1>
+                                        <h3>&nbsp 아라비카 커피의 원산지로 아프리카 최대량의 커피를 생산하는 지역입니다.<br><br>
+                                            &nbsp 자연적으로 천혜(天惠: - 하늘이 베푼 은혜)의 커피 재배 환경을 가지고 있습니다.</h3>
+                                        <h6>&nbsp산림 지역의 땅은 낙엽으로 인한 자연퇴비가 풍부하여 비료를 따로 만들지 않아도 되고,<br><br>
+                                            산림에서 고도의 유전적 다양성은 해충과 병원균의 자연적 균형을 만들어 내기 때문에 농약을 치지 않아,<br><br>
+                                            에티오피아에서 수출하는 95%의 커피는 생산과정에서 화학 비료나 살충제를 사용하지 않는 농민들에 의해 생산됩니다.<br><br><br>
+                                            에티오피아 커피는 남부, 남서부, 서부 그리고 동부 지방에서 재배되고 있는데, <br><br>
+                                            각각의 지방에서는 각자 수확자의 뚜렷한 맛을 가지고 있는 다양한 커피가 생산되고 있습니다.<br><br>
+                                            
+                                            다양한 재배 환경은 커피가 가진 다양한 풍미와 직결됩니다.<br>
+                                        </h6>
+                                    </div>
+                                    <!-- 상세설명링크 -->
+                                    <div class="detail_wrap">
+                                        <a class="nav-item detailContents" href="https://post.naver.com/viewer/postView.naver?volumeNo=32809975&memberNo=38497569" target='_blank'>details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 과테말라 슬라이드 -->
+                            <div class="carousel-item">
+                                <img class="d-block" src="about/guatemala/guatemala.jpg" alt="Second slide" height="1000px" style="background-color: black;">
+                                <div class="carousel-caption modal-dialog-centered d-md-block">
+                                    <div class="textbox">
+                                        <h1 class="">Guatemala</h1>
+                                        <h3>&nbsp과테말라 커피는 화산지대에서 재배되어 고급 스모크 커피로 유명합니다.<br><br>
+                                            과테말라 인구의 1/4이 커피 산업에 종사하고 전세계 커피수출량의 30%를 생산하고 있습니다.<br><br></h3>
+                                            <h6>&nbsp과테말라 커피의 특징을 많이 들어보면 묵직하고 스모키한 맛이 특징이라고 많이들 말합니다. <br><br>
+                                                묵직하고, 스모키한 커피의 대명사 어떤커피가 떠오르시나요?<br><br>
+                                                '스타벅스'에서는  원두로 '과테말라 안티구아'라는 원두를 판매중입니다.<br><br>
+                                                이 커피가 바로 과테말라의 '대표적인 커피'입니다.<br><br>
+                                                과테말라 커피는 화산지대에서 재배되어 고급커피가 재배되기 쉬운 천혜의 환경을 가지고 있습니다.<br><br>
+                                                커피체리 재배방법은 그늘경작법(Shade grown)을 많이 사용하고, 가공방식은 습식법을 많이 사용합니다.<br><br>
+                                                과테말라 커피는 지역마다 고소하고, 클린컵커피라고 하는 단맛이 있는 화사한 산미를 가진 커피도 있습니다. <br><br>
+                                                에티오피아 지역과 동일하게 과테말라 각각 지역에서는 각자 수확자의 뚜렷한 맛을 가지고 있는 다양한 커피가 생산되고 있습니다.<br><br>
+                                                다양한 재배 환경은 커피가 가진 다양한 풍미와 직결됩니다.<br>
+                                            </h6>
+                                    </div>
+                                    <div class="detail_wrap">
+                                        <a class="nav-item detailContents" href="https://blog.naver.com/dalkis0811/40137149880" target='_blank'>details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 케냐 슬라이드 -->
+                            <div class="carousel-item">
+                                <img class="d-block" src="about/kenya/kenya.jpeg" alt="Third slide" height="1000px" style="background-color: black;">
+                                <div class="carousel-caption modal-dialog-centered d-md-block">
+                                    <div class="textbox">
+                                        <h1 class="">Kenya</h1>
+                                        <h3>&nbsp고급 커피를 생산하기에 천혜의 환경을 갖춘 케냐는<br><br>
+                                            해발 1,500~2,100m의 고지대에서 커피를 재배합니다.<br><br></h3>
+                                            <h6>&nbsp 케냐 커피의 특징은 향이 강하고 묵직한 바디감, 와인향과 과일같은,<br><br>
+                                                상큼한 신맛이 특징인 '스페셜티 커피'로 유명합니다.<br><br>
+                                                대표적인 원두로 케냐 AA는 해발 2,000미터가 넘는 고지대에서 생산되고,<br><br>
+                                                'AA'는 원두의 크기를 나타내며, 가장 큰 원두이면서 최고급을 의미하는 등급입니다.<br><br>
+                                                19세기 후반 에티오피아를 통해 처음 커피를 도입한 케냐는,<br><br>
+                                                일찍부터 합리적인 재배, 가공, 판매 시스템과 국가 차원의 품질개발, 기술교육이 잘 갖추어졌습니다. <br><br>
+                                                덕분에 케냐는 아프리카를 대표하는 커피 생산국으로 인정받고 있습니다.
+                                            </h6>
+                                    </div>
+                                    <!-- 상세설명링크 -->
+                                    <div class="detail_wrap">
+                                        <a class="nav-item detailContents" href="https://overthink.tistory.com/282" target='_blank'>details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 콜롭비아 슬라이드 -->
+                            <div class="carousel-item">
+                                <img class="d-block" src="about/columbia/columbia3.jpeg" alt="Third slide" height="1000px" style="background-color: black;">
+                                <div class="carousel-caption modal-dialog-centered d-md-block">
+                                    <div class="textbox">
+                                        <h1 class="">Columbia</h1>
+                                        <h3>&nbsp콜롬비아는 안데스 산맥에 위치해 비옥한 화산재토양과 온화한 기후,<br><br>
+                                            적절한 강수량 등 이상적인 커피 재배 환경을 갖추고 있습니다.<br><br>
+                                            토양에는 칼륨, 아연, 칼슘 등과 미네랄이 풍부하여 품질면에서는 세계 1위의 커피를 생산하는 국가입니다.</h3>
+                                        <h6>&nbsp콜롬비아의 커피는 생두의 크기로 커피를 분류하여 4등급으로 나뉘는데,<br><br>
+                                            최상급 커피에는 수프리모(Supremo)와 엑셀소(Exelso)를 붙이고 있고,<br><br>
+                                            제일 높은 등급은 스크린 사이즈 18로 엑셀소 프리미엄 입니다.<br><br>
+                                            다른 나라의 원두들과 같이 각 지역마다 다양한 풍미의 커피가 있습니다.<br><br>
+                                            남쪽과 북쪽의 산미, 바디감이 조금씩 다르게 발현됩니다. <br><br>
+                                            남쪽으로 내려갈수록 산미가 강해지며 북쪽으로 갈수록 산미가 적어지며 바디감이 강해집니다.
+                                            </h6>
+                                    </div>
+                                    <!-- 상세설명링크 -->
+                                    <div class="detail_wrap">
+                                        <a class="nav-item detailContents" href="https://overthink.tistory.com/361" target='_blank'>details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 르완다 슬라이드 -->
+                            <div class="carousel-item">
+                                <img class="d-block" src="about/rwanda/rwanda.jpeg" alt="Third slide" height="1000px" style="background-color: black;">
+                                <div class="carousel-caption modal-dialog-centered d-md-block">
+                                    <div class="textbox">
+                                        <h1 class="">Rwanda</h1>
+                                        <h3>&nbsp'어머니의 눈물'이라고 불리는 르완다커피의 재배지인 이곳은<br><br>
+                                            국토 대부분이 산지인 작은 나라로, 산과 언덕이 많아 천개의 언덕을 가진 나라로 불립니다.<br><br>
+                                            르완다는 해발 1,500m 이상의 고지대이며 유기물이 풍부한,<br><br>
+                                            화산 토양과 온화한 기후로 천혜의 환경을 갖춘 나라입니다.</h3>
+                                            <h6>&nbsp많은 커피인들의 사랑을 받는 르완다 커피는 이웃 나라인 케냐와 에티오피아 커피의 특징을 고루 갖춰<br><br> 
+                                                향긋한 풍미와 균형 잡힌 신맛, 좋은 밸런스로 유명한 커피로,<br><br>
+                                                오렌지나 감귤류의 산뜻한 과일 향과 깔끔한 산미와 더불어 다크초콜릿의 풍미를 느낄 수 있습니다.<br><br>
+                                                과거 독일 선교사에 의해 르완다에서 처음 시작된 커피 재배는 내전을 겪으며,<br><br>
+                                                커피 생산과 수출이 거의 중단되는 상황에까지 이르렀으며,<br><br>
+                                                현재는 국민의 약 90%가 농업에 종사하며, 오직 소규모 농가에서만 커피를 재배하고 있습니다.
+                                                </h6>
+                                    </div>
+                                    <!-- 상세설명링크 -->
+                                    <div class="detail_wrap">
+                                        <a class="nav-item detailContents" href="https://blog.naver.com/donggu1989/221275668554" target='_blank'>details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" >
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only"></span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="tabcon con2" id="tab02" style="background-color: black;">
+
+                    <div class="videoBox">
+                        <video height="100%" muted autoplay loop>  
+                            <source src="about/icecoffee.mp4" type="video/mp4">
+                        </video>
+                        <div class="videoText">
+                            <div class="textbox">
+                            <p>유명 카페의 비법,<br>
+                            '맛있는 얼음'에 대해서 아시나요?</p>
+                            <h3>&nbsp커피 하면 떠오르는 아이스 커피. 커피 속에 들어가는 얼음, 다 똑같은 걸까?</h3>
+                            <h6>
+                                <br><br>&nbsp일반적인 카페에서 사용하는 얼음은 제빙기에서 -10℃의 온도에서 2시간 급속하게 만들어집니다.
+                                <br><br>&nbsp빠르게 얼려진 얼음은 얼음분자가 불안정하여, 사이에 공기의 기포가 많아지고, 빈 공간이 많다 보니 빠르게 녹아내리게 
+                                <br><br>&nbsp되는데, 아이스 커피의 경우에 이러한 얼음은 너무 금방 커피에 물이 희석되어 바리스타가 '의도한 맛'을 해치게 됩니다. 
+                                <br><br>맛있는 얼음을 만드는 방법은 기존 제빙기보다 더 낮은 온도(-18℃)에서 얼음에 바람을 불어,
+                                <br><br>천천히(10시간 이상) 고운 결정의 형태로 큰 얼음으로 만드는 것이 비법입니다.
+                                <br><br>&nbsp세계 최고 수준의 유명 카페에서는 기포가 적고 투명하며 큰 얼음을 사용할정도로 작은것 하나하나 신경쓴다고 합니다.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tabcon con3" id="tab03"style="background-color: black;">
+                    
+                    <div class="videoBox">
+                        <iframe src="https://www.youtube.com/embed/KAbDe_8zCFU? &autoplay=1&mute=1&controls=0&loop=1&playlist=KAbDe_8zCFU&start=120&end=180" frameborder="0"></iframe>
+                        <!-- autoplay=1 > 유튜브동영상이 불러와지면 자동재생하도록
+                        mute=1 > 유튜브동영상이 불러와지면 음소거상태로 재생 -->
+                        <div class="videoText">
+                            <div class="textbox">
+                                <p>에스프레소 커피 추출</p>
+                                <h3>에스프레소(Espresso)라는 말은 이탈리아어로 ‘속도가 빠른’이란 뜻입니다.<br><br></h3>
+                                <h6>사실 에스프레소는 빠른 속도 덕분에 대세가 된 커피 추출 방법입니다.<br><br>
+                                전 세계 커피전문점에서 파는 약 90% 정도의 커피가 에스프레소를 기반으로 하고 있습니다.<br><br>
+                                가장 대표적인 예를 들어보자면, 에스프레소에 물을 넣은 것이 아메리카노이고, 우유를 뜨겁게 해서 섞은 것이 카페라떼 입니다.<br><br>
+                                에스프레소 자체만으로도 다양한 메뉴가 있습니다.<br><br>
+                                리스트레또(Ristretto), 에스프레소(Espresso), 룽고(Lungo), 도피오(Dopio)가 양으로 구분한 에스프레소 메뉴입니다.<br><br>
+
+                                에스프레소 커피는 압력이 가해진 뜨거운 물을, 가늘게 분쇄하여 압축한 커피층에 통과시켜 추출한 커피입니다.<br><br>
+                                다시 말해 에스프레소는 높은 온도와 높은 압력을 가진 수증기를 이용하여 빠르게 커피 성분을 추출하는 방식입니다.<br><br>
+                                커피 추출원리에서도 여러 차례 말씀드렸듯이, 에스프레소 커피 추출에서 커피 향기와 맛에 영향을 주는 요소는,<br><br>
+                                커피원두의 분쇄도, 물의 온도, 에스프레소 머신의 압력, 그리고 추출 시간입니다.<br><br></h6>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+        </div>
+
+
+    </section>
+
+    <!-- main과 동일-->
+    <footer class="bottom_wrap">
+
+        <div class='sns'>
+            <a href="https://naver.com">
+            <img src='하단\facebook.png' height=30px> 
+            </a>
+            <a href="https://naver.com">
+            <img src='하단\insta.png' height=30px>
+            </a>
+            <a href="https://naver.com">
+            <img src='하단\email.png' height=30px>
+            </a>
+            <a href="https://naver.com">
+            <img src='하단\youtube.png' height=30px>
+            </a>
+        </div>
+    
+        <div class='introduction'>
+            <li id='introduction_1'>
+            상호명: (주)Coffee Introduce Platform | 대표: 휴먼2조 | 개인정보보호책임자: 휴먼2조 <br>
+            사업자등록번호: 123-45-678910 | 통신판매업신고번호: 제2022-경기수원-00000호<br>
+            사업장소재지: 경기 수원시 팔달구 테헤란로2길 27 패스트파이브 빌딩 9층 915호<br>
+            </li>
+            
+            <li id='introduction2'>
+            주식회사 컨슈머브릿지는 전자상거래 등에서의 소비자보호에 관한 법률에 따른 통신판매중개자로서 중개하는 통신판매에 관하여서는 통신판매의 당사자가 아니며 상품의 주문, 배송 및 환불 등과 관련한 의무와 책임은 각 판매자에게 있습니다.
+            </li>
+        </div>
+    </footer>
+
+
+
+    <!-- bootstrap script -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="TP_coffee_about.js"></script>    
+    <script>
+        //회원가입 페이지에서 가져온 사용자 이름
+        // 로그인 시 상단에 해당 유저의 이름 출력
+        if(localStorage.getItem('inputname')!= null ){
+            if(localStorage.getItem('logout')=='false'){
+                var username=document.createElement('span')
+                username.innerHTML=localStorage.getItem('inputname')+"님";
+                username.classList.add('userID')
+                document.getElementById('sign').appendChild(username);
+            }
+        }
+        
+    // 로그아웃 유무, 회원가입의 유무에 따라 마이페이지 / 로그인화면으로 가는 함수.
+        function changeSignHtml(){
+            if (localStorage.getItem('inputname') == null){
+                document.getElementById("sign").href = "TP_coffee_login.html"
+            }   
+            else{
+                if(localStorage.getItem('logout')=='true'){
+                    document.getElementById("sign").href = "TP_coffee_login.html"
+                }
+                else{
+                    document.getElementById("sign").href = "TP_coffee_mypage.html"
+                }
+            }
+
+        }
+
+
+    </script>
+
+
+    
+</body>
+</html>

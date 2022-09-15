@@ -1,0 +1,363 @@
+/* ABOUT COFFEE */
+
+/* 메인영역 레이아웃 */
+
+.middle3_wrap{
+
+    position:relative;
+
+    background-size:width=100%;
+    height:1000px;
+    width:100%;
+    display: flex;
+
+}
+
+
+/* radio 점 제거 */
+.middle3_wrap > .middle3_tabs > input[type = "radio"]{
+    display: none; 
+}
+
+
+/* 페이지 탭메뉴 선택 안됐을 때  */
+.middle3_wrap > .middle3_tabs > input[type = "radio"] + label{
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+
+    width: 20vw;
+    height: 25%;
+
+    /* 텍스트 가운데정렬 */
+    align-items: center;
+    justify-content: center;
+    
+    background: brown;
+    color: wheat;
+    font-size: 24px;
+    cursor: pointer;
+
+}
+
+
+
+/* 페이지 탭메뉴 마우스 호버시 컬러 변경 */
+.middle3_wrap > .middle3_tabs > input[type = "radio"] + label:hover{
+
+    animation: fade-hover 300ms ease-in-out forwards;
+
+}
+
+/* 마우스 포인터 호버 페이드 이펙트 */
+@keyframes fade-hover {
+
+    0% {filter: invert(0);}
+    100%{filter: invert(100);}
+    
+}
+
+a{
+    color: wheat;
+    text-decoration: none;
+
+}
+
+
+/* 라벨선택시 레이아웃 */
+
+.middle3_wrap > .middle3_tabs > input[type="radio"][id = "tab01"]:checked + label{
+    /* 텍스트 가운데정렬 */
+
+align-items: center;
+justify-content: center;
+background-color: black;
+
+border-right: 0px;
+
+/*opacity 투명도 조정 */
+opacity: 0.9;   
+
+text-decoration: none;
+}
+
+.middle3_wrap > .middle3_tabs > input[type="radio"][id = "tab02"]:checked + label{
+        /* 텍스트 가운데정렬 */
+
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+
+    border-right: 0px;
+
+    /*opacity 투명도 조정 */
+    opacity: 0.9;   
+
+    text-decoration: none;
+}
+.middle3_wrap > .middle3_tabs > input[type="radio"][id = "tab03"]:checked + label{
+    /* 텍스트 가운데정렬 */
+align-items: center;
+justify-content: center;
+background-color: black;
+
+border-right: 0px;
+
+/*opacity 투명도 조정 */
+opacity: 0.9;   
+
+text-decoration: none;
+}
+.middle3_wrap > .middle3_tabs > input[type="radio"][id = "tab04"]:checked + label{
+    /* 텍스트 가운데정렬 */
+align-items: center;
+justify-content: center;
+background-color: black;
+
+border-right: 0px;
+
+/*opacity 투명도 조정 */
+opacity: 0.9;   
+
+text-decoration: none;
+
+}
+
+/* 콘텐츠별 레이아웃 상위 클래스 */
+
+.middle3_wrap > .middle3_tabs > .tabcon_wrap{
+
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 라벨마다 콘텐츠별 레이아웃 */
+
+.middle3_wrap > .tabcon_wrap > .tabcon{
+
+
+    margin: 0;
+    width: 80vw;
+    height: 100%;
+    /* background: #6667AB; */
+    display : none;
+    color : white;
+    align-content: center;
+    justify-content: center;
+    background-size: cover;
+
+    /* border: 1px solid #000;
+    border-radius: top right bottom left; */
+
+}
+
+/* 콘텐츠 내부 텍스트 레이아웃 */
+
+.text_wrap{
+
+    background-size:width=100% height=3%;
+    background-color: transparent;
+
+}
+
+/* 콘텐츠 내부 텍스트박스 레이아웃 */
+
+.textbox{
+
+    position: relative;
+
+    width: 94%;
+    height: 30%;
+    margin: 0px 3% 3% 3%;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.7);
+    top : 50px;
+    font-size: 14px;
+    color: wheat;
+    /* border: 5px dotted white; */
+    /* border-radius: 50px 0px 50px 0px ; */
+    
+    animation: fade 1500ms ease-in-out forwards;
+    
+}
+
+/* 부트스트랩 콘텐츠 크기 */
+
+.carousel-item.active{
+
+    width: 75vw;
+}
+
+/* 부트스트랩 콘텐츠 내부 텍스트박스 크기 */
+
+.carousel-item.active > .textbox{
+
+    width : 100%;
+
+}
+
+/* fade-in effect  */
+
+@keyframes fade{
+
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+    
+}
+
+/* 텍스트, 비디오 텍스트 > h태그 레이아웃 및 에니메이션 */
+
+.textbox > h1, .videoText > h1{
+
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 1%;
+    color: wheat;
+    font-size: 50px;
+    animation: fade 1500ms ease-in-out forwards;
+}
+
+.textbox > h3, .videoText > h3{
+
+    margin-left: 20px;
+    margin-right: 20px;
+    color: wheat;
+    margin-top: 1%;
+    font-size: 20px;
+    animation: fade 1500ms ease-in-out forwards;
+}
+
+.textbox > h6, .videoText > h6{
+
+    margin-left: 20px;
+    margin-right: 20px;
+    color: wheat;
+    margin-top: 1%;
+    font-size: 15px;
+    animation: fade 1500ms ease-in-out forwards;
+}
+
+.carousel-item.active > .carousel-caption > h1{
+
+    color: wheat;
+    animation: fade 1500ms ease-in-out forwards;
+
+/* slide넘어가고 적절하게 텍스트 에니메이션 들어가는 시간 확인하여 적용 */
+
+}
+.carousel-item.active > .carousel-caption > h4{
+
+    color: wheat;
+    animation: fade 1500ms ease-in-out forwards;
+    /* slide넘어가고 적절하게 텍스트 에니메이션 들어가는 시간 확인하여 적용 */
+
+}
+.carousel-item.active > .carousel-caption > h6{
+
+    color: wheat;
+    animation: fade 1500ms ease-in-out forwards;
+    /* slide넘어가고 적절하게 텍스트 에니메이션 들어가는 시간 확인하여 적용 */
+}
+
+/* 비디오  레이아웃  */
+.videoBox{ 
+
+    height: 100%; 
+    overflow: hidden;
+    margin: 0px auto; 
+    position: relative; 
+    animation: fade 500ms ease-in-out forwards;
+    background-color: black;
+
+}
+/* 비디오 텍스트 포지션 및 레이아웃  */
+.videoText{
+
+    position: absolute;
+    width: 60vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 14px;
+    color: wheat;
+    animation: fade 500ms ease-in-out forwards;
+
+}
+
+/* 비디오 텍스트 메인문구  */
+.videoText p{
+
+    text-align: center;
+    font-size: 48px;
+    color: wheat;
+    animation: fade 500ms ease-in-out forwards;
+
+
+}
+
+/* 유튜브 비디오 레이아웃 */
+iframe{
+
+    height: 100%;
+    width: 75vw;
+
+}
+
+
+/* 커피 콘텐츠 백그라운드 이미지 에니메이션 적용 */
+#tab00{
+    background-color: black;
+    animation: fadecoffee 30s ease-in-out forwards;
+}
+
+@keyframes fadecoffee{
+
+    0% { background-image: url("about/coffee/01.jpg");}
+    12.5% { background-image: url("about/coffee/00.jpeg");}
+    25% { background-image: url("about/coffee/02.jpg");}
+    37.5% { background-image: url("about/coffee/03.jpg");}
+    50% { background-image: url("about/coffee/04.jpg");}
+    62.5% { background-image: url("about/coffee/05.jpg");}
+    75% { background-image: url("about/coffee/06.jpg");}
+    87.5% { background-image: url("about/coffee/07.jpg");}
+    100% { background-image: url("about/coffee/01.jpg");}
+
+}
+
+/* .text_wrap > a{
+
+    font-size: 20px;
+    position: fixed;
+    top: 25%;
+    background-color: blue;
+    width: 70px;
+    height: 35px;
+} */
+
+/* 상세설명링크 버튼 레이아웃 및 에니메이션 */
+
+.detail_wrap{
+
+    margin-top: 40%;
+
+    font-size: 25px;
+    color: wheat;
+    background-size:height=30px width=70px;
+    animation: fade 1500ms ease-in-out forwards;
+}
+
+.detail_wrap > .detailContents{
+
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+
+}
+
+.detailContents:hover{
+
+    animation: fade-hover 300ms forwards;
+
+}

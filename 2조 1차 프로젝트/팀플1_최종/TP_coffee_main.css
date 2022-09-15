@@ -1,0 +1,251 @@
+/* Default */
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+    list-style : none;
+    text-decoration : none;
+    border-collapse : collapse;
+    margin : 0px;
+    padding : 0px;
+    color : #000;
+    -ms-overflow-style: none;
+}
+
+/* 공통(common)
+(Top Section) */
+.header{
+    width:100%;
+    height:100px;
+    position:flex;
+    text-align:center;
+}
+
+/* 로고(Logo) */
+.logoArea{
+    top:23px;
+    height:100px;
+    width:100px;
+    left: 50px;
+    position: absolute;
+}
+
+.logoArea a{
+    font-weight:border;
+    font-size:40px;
+    color:black;
+    text-decoration-line: none;
+    font-family: 'Abril Fatface', cursive;
+    text-decoration : none;
+}
+.logoArea a:hover{
+    color:black;
+}
+
+/* 메뉴(Menu bar) */
+.menu{
+    position:relative;
+    width: 1000px;
+    
+    top:40px;
+    display:flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items:center;
+    flex-direction:row;
+
+
+}
+.menu > li{
+
+    left:-90px;
+    margin-left : 150px;
+    font-size:15px;
+    position:relative;
+    
+}
+
+.menu>li>a{
+    color:brown;
+    font-weight:bold;
+    text-decoration-line: none
+}
+
+.menu>li:hover{
+    transform:scale(2);
+}
+
+/* 로그인 버튼(Login Button) */
+.sign{
+    display:flex;
+    position : relative;
+    width:150px;
+    left:85%;
+    text-align:center;
+
+}
+/* 로그인 시 회원이름 출력 */
+/* username output */
+.sign>a{
+    text-decoration-line: none;
+    color:black;
+    padding:10px;
+    font-size:15px;
+    text-align:center;
+}
+.userID{    
+    margin-left:12px;
+    font-weight:bolder;
+    margin-top:13px;
+    font-size:16px;
+}
+
+/* 공통(bottom 섹션)*/
+.bottom_wrap{
+    display:block;
+    position:relative;
+    text-align:center;
+    height:0px;
+    bottom:0;
+    margin: 0 auto;
+}
+
+/* middle과 footer구분하기 위한 선( hr tag ) */
+.bottom_wrap_line{
+    width: 100%;
+    color:darkgrey;
+    text-align:center;
+    margin:0 auto;
+}
+
+/* sns이미지 및 링크 */
+/* sns icon( facebook, instagram, email, youtube) */
+.sns{
+    position:relative;
+    top:20px;
+}
+
+.sns>a{
+    margin-left:30px;
+    color:white;
+}
+
+.sns>a>img{
+    border-radius:5px;
+}
+
+/* 상호명, 대표 등 회사 소개 */
+/* Company, CEO, etc. introduction */
+.introduction{
+    position:relative;
+    top: 30px;
+}
+#introduction1{
+    color:black;
+    font-size:15px; 
+}
+
+#introduction2{
+    margin-top:10px;
+    color:darkgrey;
+    font-size:12px;
+}
+
+
+/* 선택적 요소 (option) */
+/*배너(banner)*/
+.banner{
+    background-image:url("배너/coffee_large2.jpeg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    text-align:center;
+    width:100%;
+    height:300px;
+    position:relative;
+}
+
+
+/* 가운데 섹션 큰틀 
+overall middle wrap section */
+.middle_wrap{
+    width:100%;
+    position: relative;
+}
+
+/* 메인(main) html 부분 */
+
+/* middle 상단(upper) 부분 */
+.middle_main_upper_wrap{
+    position:relative;
+    height:1000px;
+    background-image:url("main/coffee_large.jpeg");
+    background-size:cover;
+}
+/* middle 상단 텍스트(upper text) */
+.middle_main_upper_content{
+    text-align:center;
+
+}
+.middle_main_upper_content>h1{
+    top:120px;
+    position:relative;
+    font-size:70px;
+    font-weight:bold;
+    color:#A68A72;    
+    font-family: 'Jua', sans-serif;
+}
+
+
+.middle_main_upper_content>li{
+    top:130px;
+    position:relative;
+    font-size:45px;
+    color:#261615;
+    font-family: 'Nanum Pen Script', cursive;
+    padding:0px;
+    line-height:1.2em;
+}
+
+/* middle 상단 이미지(upper image) */
+.middle_main_upper_image{
+    width:600px;    
+    text-align:center;
+    position:relative;  
+    top: 220px;    
+    margin:0 auto;
+}
+
+/* middle 하단 부분(under section) */
+.middle_main_under_wrap{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+
+/* middle 하단(under) 컨텐츠 묶음(content wrap) */
+.row{
+    position: relative;
+    height: 500px;
+    width:1200px;
+    align-items: center;
+    justify-content:center;
+}
+
+/* middle 하단(under) 각 카페 관련 내용 ( Contents related to each cafe) */
+.card{
+    position: relative;
+    height:450px;
+    width:auto;
+    justify-content: space-around;
+    font-size:auto;
+}
+
+.card-body h5{
+    font-weight:bolder;
+    color:rgba(119, 2, 51, 0.89);
+    font-size:20px;
+}
+
+.card-body li{
+    color:rgb(94, 94, 94);
+    font-size:14px;
+}
